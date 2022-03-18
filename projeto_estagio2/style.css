@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    header{
+        background-color: rgb(205, 205, 205);
+        display: flex;
+        padding: 20px 15%;
+        font-weight: bold;
+    }
+    .logo{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin: 0px 5px;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    header ul{
+        display: flex;
+        list-style: none;
+    }
+    header li{
+        padding: 10px;
+        margin: 0px 5px;
+    }
+    .logo:hover, header li:hover{
+        text-transform: 0,2s;
+        background-color: darkgrey;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px grey;
+    }
+    #busca {
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+    }
+    .iconebusca{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        right: 30px;
+        top: 10px;
+    }
+    main{
+        background-color: rgb(233, 233, 233);
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 1170px;
+        margin: auto;
+    }
+    .box{
+        background-color: white;
+        margin: 20px;
+        border-radius: 8px;
+        width: 350px;
+        height: 450px;
+    }
+    .box h1{
+        padding: 10px;
+        font-size: 14pt;
+    }
+    .box p{
+        padding: 10px;
+        padding: 12pt;
+        height: 70%;
+    }
+    .box input{
+        padding: 10px 70px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(205, 205, 205);
+        margin: auto; 
+        display: block; 
+        cursor: pointer;    
+    }
+    .box input:hover{
+        background-color: darkgrey;
+        box-shadow: 2px 2px 1px grey;
+    }
+    footer{
+        background-color: rgb(205, 205, 205);
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+    @media (max-width:1190px){
+        header{
+            padding: 10px 5%;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 780px;
+        }
+    }
+    @media (max-width:815px){
+        header {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        header li{
+            text-align: center;
+        }
+        .logo{
+            padding: 10px 0px;
+        }
+        #busca{
+            width: 80px;
+        }
+        .iconebusca{
+            top: 10px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr ;
+            width: 390px;
+        }
+    }
+    @media(max-width: 587px){
+        nav{
+            justify-content: center;
+        }
+        header li{
+            padding: 10px 0px;
+        }
+        .iconebusca{
+            top:15px;
+        }
+    }

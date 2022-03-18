@@ -1,0 +1,164 @@
+/* Paleta de cores:
+        color: #FFD70A;
+        color: #E8AD09;
+        color: #FEA002;
+        color: #E87B09;
+        color: #FF630A;
+        */
+        
+        /*<li><a href="#"><img src="galeria/imagem2.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="galeria/imagem3.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="galeria/imagem4.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="galeria/imagem5.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="galeria/imagem6.jpeg" alt=""></a></li>*/
+@font-face {
+    font-family: "gothic";
+    src: url(GOTHIC.TTF);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "gothic" ,'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    letter-spacing: 1px;
+}
+body{
+    background-color: #ffd60a30;
+}
+.agendamento a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.agendamento a:hover{
+    background-color: rgba(255, 255, 255, 0.700);
+    border-radius: 8px;
+}
+.agendamento{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFD70A;
+    position: fixed;
+}
+.logo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: white;
+    margin: 0px 5% 40px 5%;
+    border-radius: 20px ;
+    padding: 20px;
+    /* IGUAL */
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.alin{
+    position: relative;
+    top: 8px; 
+    color: #FEA002;
+    text-decoration: none;
+}
+.alin a{
+    text-decoration: none;
+    color: #FEA002;
+}
+.inlinha{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0px 5% 40px 5%;
+    border-radius: 20px ;
+    padding: 20px;
+    /* IGUAL */
+}
+.seta{
+    display: block;
+    margin: auto -20px;
+    height: 150px;
+    width: 150px;
+}
+.inverter{
+    transform: scaleX(-1);
+}
+.galeria{
+    display: flex;
+}
+.galeria li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.galeria picture,
+.galeria img{
+    width: 100%;
+}
+main{
+    background-color: white;
+    margin: 0px 5% 40px 5%;
+    border-radius: 20px ;
+    padding: 20px;
+    /* IGUAL */ 
+}
+main h1{
+    text-align: center;
+    width: 100%;
+    color: #FEA002;
+}
+main p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    margin: 10px 5%;
+}
+.box{
+    border: 4px solid #FFD70A;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 10px 0px;
+}
+main h3{
+    text-align: center;
+    font-size: x-large;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.container2 h3{
+    text-align: left;
+    padding: 10px 0px;
+}
+.rodape{
+    width: 100%;
+    height: 4vh;
+    background-color: #FFD70A;
+}
+footer{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+}
+footer h3{
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+}
+@media(max-width: 1100px){
+    
+}
